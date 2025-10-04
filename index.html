@@ -4,22 +4,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fotonix</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <span>our prototype and research</span>
+    <div id="language-select">
+        <a href="index.html">EN</a> | <a href="index_pl.html">PL</a> | <a href="index_ua.html">UA</a> | <a href="index_ro.html">RO</a> | <a href="index_hr.html">HR</a> | <a href="index_iq.html">IQ</a> | <a href="index_kr.html">KR</a> | <a href="index_cz.html">CZ</a> | <a href="index_pt.html">PT</a>
+    </div>
+    <br />
+    <span>OUR RESEARCH & PROTOTYPE</span>
     <h1>DESIGN AND DEVELOPMENT OF A PROTOTYPE OPTICAL PHOTOVOLTAIC CELL AMPLIFIER <b>"FOTONIX"</b></h1>
     <hr />
-    <span>current technology used in photovoltaics</span>
-    <p></p>
-    <span>challenge</span>
-    <h2></h2>
-    <span>solution</span>
-    <p></p>
-    <span>authors</span>
     <div>
-        <h4><i>Weronika Woroszczuk</i> & <i>Michał Łukasiak</i></h4>
-        <h4>Poland</h4>
-    </div>
+        <h4>authors: <i>Weronika Woroszczuk</i> & <i>Michał Łukasiak</i> | POLAND</h4>
+        </div>
+        <br />
+        <span>CURRENT TECHNOLOGY USED IN PHOTOVOLTAIC</span>
+        <p>
+        Photovoltaic (PV) technology has become one of the most widely adopted solutions for renewable energy generation. Despite significant progress in the efficiency and accessibility of photovoltaic systems, their performance remains strongly dependent on a variety of environmental and operational factors. For instance, suboptimal placement of <abbr title="Photovoltaic">PV</abbr> panels can reduce energy conversion efficiency by up to 20%. Additional performance losses may result from non-ideal tilt and orientation angles relative to solar radiation, elevated operating temperatures, or surface contamination such as dust and dirt.    </p>
+        <p>
+        Contemporary <abbr title="Photovoltaic">PV</abbr> installations typically rely on crystalline silicon-based cells, which dominate the global market due to their mature manufacturing processes and relatively high efficiency. However, these systems still require careful configuration and maintenance to achieve optimal energy yields. The effectiveness of an installation depends not only on the cell technology itself but also on the system’s design, including module orientation, shading management, and inverter efficiency.    </p>
+    <p>
+        With the increasing availability of renewable energy systems, user awareness and correct operation practices remain key factors influencing long-term system performance. Inadequate understanding of installation requirements and operational principles can lead to reduced efficiency and delayed return on investment. Therefore, ongoing research and development focus not only on improving material properties and cell architectures but also on optimizing system integration and maintenance strategies to enhance overall energy output and reliability.    </p>
+    <span>CHALLENGES & THEIR POTENTIAL SOLUTIONS</span>
+
+    <ol>
+        <li><b>Problem 1 - Shading:</b> Shading even 10% of the panel can reduce its efficiency by 2-5%, and covering 50% can reduce it by up to 60%. Furthermore, the shadow cast on the cell can shorten its lifespan by 10% to 20%.
+        <ul><li><b>Solution - Focusing mirror:</b> Fotonix concentrates all available light on the mirror shield and then redirects it to a lens that evenly diffuses it on the panel surface, avoiding shading.</li></ul></li>
+        <li><b>Problem 2 - Inclination and direction of panel:</b> An angle of inclination between 30° to 40° and a southern orientation are key. A change of 10° from the optimal angle can result in a power drop of up to 10%.
+        <ul><li><b>Solution - Mirror shell and sun tracking:</b> Fotonix accumulates light on the shell regardless of its angle of incidence and focuses it on a lens, and can be equipped with actuators and sensors to follow the sun.</li></ul></li>
+        <li><b>Problem 3 - Elevated operating temperature of photovoltaic cells:</b> The nominal power and panel efficiency drop by about 0.5% for each degree above 25°C. Cell life also decreases, which already at 40°C decreases by about 10%, and at 60°C by as much as 20%.
+        <ul><li><b>Solution - Mirror instead of direct exposure to the sun:</b> Fotonix uses a double-sided bifacial photovoltaic panel and a frame is airy, which gives additional cooling possibilities.</li></ul></li>
+    </ol>
+    
+    <span>PROTOTYPE OVERVIEW</span>
+    
+    <span>PROTOTYPE OVERVIEW</span>
+    <p>
+        Fotonix consists of a frame on which subsequent modules are mounted. These include:
+    </p>
+    <ul>
+        <li><b>Focusing module</b> - a mirror focusing light,</li>
+        <li><b>Diffusing module</b> - a lens diffusing light onto the PV panel,</li>
+        <li><b>Solar module</b> - a PV panel, illuminated by light diffused by the lens,</li>
+        <li><b>Power module</b> - electronics responsible for powering the battery with the PV panel.</li>
+    </ul>
+    <p>
+        The Fotonix system discussed in the example is mounted on a frame made in 3D printing technology, in which an ecologically sourced polylactide filament (PLA) ⌀1.75 mm with non-flammable and non-toxic properties was used. The same material is used in biomedical applications, including the creation of sutures - its potential application in tissue engineering is also being considered.
+    </p>
+    <p>
+        Counting from the bottom, the system consists of a concave mirror ⌀20 cm at f = 10 cm, which focuses light on a concave lens with dimensions ⌀10 cm, diffusing light onto the area of a 115x115x3mm 9 V/1.5 W photovoltaic panel 10 cm away.
+    </p>
+    <p>
+        In addition to the PV panel, the power module consists of an LM317 1.5A adjustable stabilizer, a TP4056 Li-Ion 18650 charger circuit, and an 18650 3.7V li-Ion 2200 mAh cell. For ease of use, a basket for the 1865 cell has also been added.
+    </p>
+    <p>
+        Fotonix is an innovative solution designed for international invention exhibitions, showcasing advancements in optical photovoltaic cell amplification.
+    </p>
+    <span>GALLERY</span>
+    <img src="images/working-process.png" alt="Fotonix Prototype Preparation" width="300">
+    <hr />
+    <span>CONTACT DETAILS</span>
+    <p>For more information, please contact us at:</p>
+    <dl>
+        <dt>Michał Łukasiak</dt>
+        <dd><a href="mailto:michal.lukasiak@proton.me">michal.lukasiak@proton.me</a>
+        <dt>Weronika Woroszczuk</dt>
+        <dd><a href="mailto:weronika.woroszczuk@proton.me">weronika.woroszczuk@proton.me</a>
+    </dl>
+    
 </body>
 </html>
