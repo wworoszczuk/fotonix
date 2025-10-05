@@ -5,17 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fotonix</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons/css/flag-icons.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="language-select">
-        <a href="index.html">EN</a> | <a href="index_pl.html">PL</a> | <a href="index_ua.html">UA</a> | <a href="index_ro.html">RO</a> | <a href="index_hr.html">HR</a> | <a href="index_iq.html">IQ</a> | <a href="index_kr.html">KR</a> | <a href="index_cz.html">CZ</a> | <a href="index_pt.html">PT</a>
+    <div style="font-size: 127%;" id="language-select">
+        <a href="index.html"><span class="fi fi-gb"></span></a> | 
+        <a href="index_pl.html"><span class="fi fi-pl"></span></a> | 
+        <a href="index_ua.html"><span class="fi fi-ua"></span></a> | 
+        <a href="index_ro.html"><span class="fi fi-ro"></span></a> | 
+        <a href="index_my.html"><span class="fi fi-my"></span></a> | 
+        <a href="index_hr.html"><span class="fi fi-hr"></span></a> | 
+        <a href="index_iq.html"><span class="fi fi-iq"></span> | <span class="fi fi-sd"></span> | <span class="fi fi-ma"></span></a> |
+        <a href="index_th.html"><span class="fi fi-th"></span></a> | 
+        <a href="index_cn.html"><span class="fi fi-cn"></span> | <span class="fi fi-tw"></span></a> | 
+        <a href="index_kr.html"><span class="fi fi-kr"></span></a> |
+        <a href="index_id.html"><span class="fi fi-id"></span></a> | 
+        <a href="index_cz.html"><span class="fi fi-cz"></span></a> | 
+        <a href="index_bg.html"><span class="fi fi-bg"></span></a> | 
+        <a href="index_ir.html"><span class="fi fi-ir"></span></a> | 
+        <a href="index_pt.html"><span class="fi fi-pt"></span></a>
     </div>
     <br />
     <span>OUR RESEARCH & PROTOTYPE</span>
-    <h1>DESIGN AND DEVELOPMENT OF A PROTOTYPE OPTICAL PHOTOVOLTAIC CELL AMPLIFIER <b>"FOTONIX"</b></h1>
+    <h1>DESIGN AND DEVELOPMENT OF A PROTOTYPE OPTICAL PHOTOVOLTAIC SYSTEMS AMPLIFIER <b>"FOTONIX"</b></h1>
     <hr />
     <div>
         <h4>authors: <i>Weronika Woroszczuk</i> & <i>Michał Łukasiak</i> | POLAND</h4>
@@ -28,20 +43,71 @@
         Contemporary <abbr title="Photovoltaic">PV</abbr> installations typically rely on crystalline silicon-based cells, which dominate the global market due to their mature manufacturing processes and relatively high efficiency. However, these systems still require careful configuration and maintenance to achieve optimal energy yields. The effectiveness of an installation depends not only on the cell technology itself but also on the system’s design, including module orientation, shading management, and inverter efficiency.    </p>
     <p>
         With the increasing availability of renewable energy systems, user awareness and correct operation practices remain key factors influencing long-term system performance. Inadequate understanding of installation requirements and operational principles can lead to reduced efficiency and delayed return on investment. Therefore, ongoing research and development focus not only on improving material properties and cell architectures but also on optimizing system integration and maintenance strategies to enhance overall energy output and reliability.    </p>
-    <span>CHALLENGES & THEIR POTENTIAL SOLUTIONS</span>
+    <span id="challenges">CHALLENGES & THEIR POTENTIAL SOLUTIONS</span>
 
     <ol>
-        <li><b>Problem 1 - Shading:</b> Shading even 10% of the panel can reduce its efficiency by 2-5%, and covering 50% can reduce it by up to 60%. Furthermore, the shadow cast on the cell can shorten its lifespan by 10% to 20%.
-        <ul><li><b>Solution - Focusing mirror:</b> Fotonix concentrates all available light on the mirror shield and then redirects it to a lens that evenly diffuses it on the panel surface, avoiding shading.</li></ul></li>
-        <li><b>Problem 2 - Inclination and direction of panel:</b> An angle of inclination between 30° to 40° and a southern orientation are key. A change of 10° from the optimal angle can result in a power drop of up to 10%.
-        <ul><li><b>Solution - Mirror shell and sun tracking:</b> Fotonix accumulates light on the shell regardless of its angle of incidence and focuses it on a lens, and can be equipped with actuators and sensors to follow the sun.</li></ul></li>
-        <li><b>Problem 3 - Elevated operating temperature of photovoltaic cells:</b> The nominal power and panel efficiency drop by about 0.5% for each degree above 25°C. Cell life also decreases, which already at 40°C decreases by about 10%, and at 60°C by as much as 20%.
-        <ul><li><b>Solution - Mirror instead of direct exposure to the sun:</b> Fotonix uses a double-sided bifacial photovoltaic panel and a frame is airy, which gives additional cooling possibilities.</li></ul></li>
+        <li>
+            <div>
+                <b>Problem 1 - Shading:</b> Shading even 10% of the panel can reduce its efficiency by 2-5%, and covering 50% can reduce it by up to 60%. Furthermore, the shadow cast on the cell can shorten its lifespan by 10% to 20%.
+                <ul><li><b>Solution - Focusing mirror:</b> Fotonix concentrates all available light on the mirror shield and then redirects it to a lens that evenly diffuses it on the panel surface, avoiding shading.</li></ul>
+            </div>
+            <figure>
+                <a href="#graphic1">
+                    <img src="images/shading.png" alt="Shading Effect on Photovoltaic Panel" title="Shading Effect on Photovoltaic Panel" width="300">
+                </a>
+                <figcaption>
+                    Comparison of the panel with a bypass diode (left) and without it (right). Source: better.tauron.pl
+                </figcaption>
+            </figure>    
+        </li>
+        <li>
+            <div>
+                <b>Problem 2 - Inclination and direction of panel:</b> An angle of inclination between 30° to 40° and a southern orientation are key. A change of 10° from the optimal angle can result in a power drop of up to 10%.
+                <ul><li><b>Solution - Mirror shell and sun tracking:</b> Fotonix accumulates light on the shell regardless of its angle of incidence and focuses it on a lens, and can be equipped with actuators and sensors to follow the sun.</li></ul>
+            </div>
+            <figure>
+                <a href="#graphic2">
+                    <img src="images/direction.png" alt="Shading Effect on Photovoltaic Panel" title="Shading Effect on Photovoltaic Panel" width="300">
+                </a>
+                <figcaption>
+                    Optimum location and influence of tilt angle on performance of solar PV panels, Yunus Khan T.M., Manzoore Elahi M Soudagar, Mithun Kanchan, Asif Afzal, Akadémiai Kiadó Hungary, 2019
+                </figcaption>
+            </figure>    
+        </li>
+        <li>
+            <div>
+                <b>Problem 3 - Elevated operating temperature of photovoltaic cells:</b> The nominal power and panel efficiency drop by about 0.5% for each degree above 25°C. Cell life also decreases, which already at 40°C decreases by about 10%, and at 60°C by as much as 20%.
+                <ul><li><b>Solution - Mirror instead of direct exposure to the sun:</b> Fotonix uses a double-sided bifacial photovoltaic panel and a frame is airy, which gives additional cooling possibilities.</li></ul>
+            </div>
+            <figure> 
+                <a href="#graphic3"> 
+                    <img src="images/temperature.png" alt="Shading Effect on Photovoltaic Panel" title="Shading Effect on Photovoltaic Panel" width="300">
+                </a>
+                <figcaption>
+                    The Impact of Temperature on the Efficiency of Photovoltaic Modules, A.R. Jha and A.K. Pandey, Renewable Energy, 2015
+                </figcaption>
+            </figure>    
+        </li>
     </ol>
+
+    <div class="lightbox" id="graphic1">
+        <a href="#challenges" class="close">&times;</a>
+        <img src="images/shading.png" alt="Fotonix Prototype Testing Image">
+    </div>
+
+    <div class="lightbox" id="graphic2">
+        <a href="#challenges" class="close">&times;</a>
+        <img src="images/direction.png" alt="Fotonix Prototype Testing Image">
+    </div>
+
+    <div class="lightbox" id="graphic3">
+        <a href="#challenges" class="close">&times;</a>
+        <img src="images/temperature.png" alt="Fotonix Prototype Testing Image">
+    </div>
     
     <span>PROTOTYPE OVERVIEW</span>
-    
-    <span>PROTOTYPE OVERVIEW</span>
+    <br />
+    <img src="images/fotonix.png" alt="Fotonix Prototype Image" title="Fotonix Prototype" width="500">
     <p>
         Fotonix consists of a frame on which subsequent modules are mounted. These include:
     </p>
@@ -60,11 +126,120 @@
     <p>
         In addition to the PV panel, the power module consists of an LM317 1.5A adjustable stabilizer, a TP4056 Li-Ion 18650 charger circuit, and an 18650 3.7V li-Ion 2200 mAh cell. For ease of use, a basket for the 1865 cell has also been added.
     </p>
-    <p>
-        Fotonix is an innovative solution designed for international invention exhibitions, showcasing advancements in optical photovoltaic cell amplification.
-    </p>
+
+    <table>
+        <tr>
+            <th></th>
+            <th>Current technology</th>
+            <th>FOTONIX</th>
+        </tr>
+        <tr>
+            <th>Output power</th>
+            <td>1,5 W</td>
+            <td>3-3,6 W</td>
+        </tr>
+    </table>
+    <br />
+    <div style="display: flex; align-items: flex-start; gap: 32px; margin-top: 24px;">
+        <img src="images/schema.png" alt="Fotonix Prototype Schema Image" title="Fotonix Prototype Schema" width="500" style="flex-shrink:0;">
+        <div style="display: flex; flex-direction: column; gap: 12px; margin-top: 16px;">
+            <div style="display: flex; align-items: center; gap: 8px;">
+                <span style="display: inline-block; width: 18px; height: 18px; background: #6E40F2; border-radius: 4px;"></span>
+                <span style="font-size: 0.98em;">Diffusing lens</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 8px;">
+                <span style="display: inline-block; width: 18px; height: 18px; background: #40E7F2; border-radius: 4px;"></span>
+                <span style="font-size: 0.98em;">Concave mirror</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 8px;">
+                <span style="display: inline-block; width: 18px; height: 18px; background: #FBE41C; border-radius: 4px;"></span>
+                <span style="font-size: 0.98em;">Reflected rays</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 8px;">
+                <span style="display: inline-block; width: 18px; height: 18px; background: #FB511C; border-radius: 4px;"></span>
+                <span style="font-size: 0.98em;">Diffused rays</span>
+            </div>
+        </div>
+    </div>
+    <br />
     <span>GALLERY</span>
-    <img src="images/working-process.png" alt="Fotonix Prototype Preparation" width="300">
+    <br />
+    <br />
+    <div class="gallery" id="gallery">
+        <a href="#img1">
+            <img src="images/working-process.png" alt="Fotonix Prototype Preparation Image" title="Fotonix Prototype Preparation" width="300">
+        </a>
+        <a href="#img2">
+            <img src="images/testing.png" alt="Fotonix Prototype Testing Image" title="Fotonix Prototype Testing" width="300">
+        </a>
+        <a href="#img3">
+            <img src="images/innature.png" alt="Fotonix Prototype In nature Image" title="Fotonix Prototype In nature" width="300">
+        </a>
+        <a href="#img4">
+            <img src="images/new.png" alt="Fotonix New Prototype Image" title="Fotonix New Prototype" width="300">
+        </a>
+        <a href="#img5">
+            <img src="images/bottom-perspective.png" alt="Fotonix Prototype Bottom Perspective Image" title="Fotonix Prototype Bottom Perspective" width="300">
+        </a>
+        <a href="#img6">
+            <img src="images/autodesk.png" alt="Fotonix Autodesk Image" title="Fotonix Autodesk" width="300">
+        </a>
+        <a href="#img7">
+            <img src="images/manual-testing.png" alt="Fotonix Prototype Manual testing Image" title="Fotonix Prototype Manual testing" width="300">
+        </a>
+        <a href="#img8">
+            <img src="images/app.png" alt="Fotonix App Image" title="Fotonix App" width="300">
+        </a>
+        <a href="#img9">
+            <img src="images/awarded.png" alt="Fotonix Awarded Image" title="Fotonix Awarded" width="300">
+        </a>    
+    </div>
+
+    <div class="lightbox" id="img1">
+        <a href="#gallery" class="close">&times;</a>
+        <img src="images/working-process.png" alt="Fotonix Prototype Preparation Image">
+    </div>
+
+    <div class="lightbox" id="img2">
+        <a href="#gallery" class="close">&times;</a>
+        <img src="images/testing.png" alt="Fotonix Prototype Testing Image">
+    </div>
+
+    <div class="lightbox" id="img3">
+        <a href="#gallery" class="close">&times;</a>
+        <img src="images/innature.png" alt="Fotonix Prototype In nature Image">
+    </div>
+
+    <div class="lightbox" id="img4">
+        <a href="#gallery" class="close">&times;</a>
+        <img src="images/new.png" alt="Fotonix New Prototype Image">
+    </div>
+    
+    <div class="lightbox" id="img5">
+        <a href="#gallery" class="close">&times;</a>
+        <img src="images/bottom-perspective.png" alt="Fotonix Prototype Bottom Perspective Image">
+     </div>
+     
+    <div class="lightbox" id="img6">
+        <a href="#gallery" class="close">&times;</a>
+        <img src="images/autodesk.png" alt="Fotonix Autodesk Image">
+    </div>
+    
+    <div class="lightbox" id="img7">
+        <a href="#gallery" class="close">&times;</a>
+        <img src="images/manual-testing.png" alt="Fotonix Prototype Manual testing Image">
+    </div>
+    
+    <div class="lightbox" id="img8">
+        <a href="#gallery" class="close">&times;</a>
+        <img src="images/app.png" alt="Fotonix App Image">
+    </div>
+
+    <div class="lightbox" id="img9">
+        <a href="#gallery" class="close">&times;</a>
+        <img src="images/awarded.png" alt="Fotonix Awarded Image">
+    </div>
+
     <hr />
     <span>CONTACT DETAILS</span>
     <p>For more information, please contact us at:</p>
